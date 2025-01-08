@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasterManagement</title>
+      
+   <!-- Favicons -->
+<link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/icon.png') }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/icon.png') }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/icon.png') }}">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='vendor/aos/aos.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+ 
+   <!-- Main CSS File -->
+<link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+
+</head>
+<body>
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+            <a href="{{url_for('home')}}" class="logo d-flex align-items-center me-auto">
+              <img src="{{ url_for('static', filename='images/mm5.png') }}" alt="Mastermgt">
+            </a>
+
+              <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="#menu">Tickets <br></a></li>
+                    <li><a href="#kstars">What's Inside</a></li>
+                    <li><a href="#venue">Red Carpet</a></li>
+                    <li><a href="#newsletter">News letter</a></li>
+                </ul>
+<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+              </nav>
+              <div class="book-icon">
+                <a href="{{url_for('bookingpage')}}" class="cta-btn">Book Now</a>
+              </div>
+        </div>
+    </header> 
+
+    <main class="main">
+
+        <!-- hero section -->
+        <section id="hero" class="hero section">
+          <img src="{{ url_for('static', filename='images/pic7.jpg') }}" alt="" class="">
+          <div class="container d-flex flex-column align-items-center text-center mt-auto">
+                <h2>Welcome To <span> My World</span></h2>
+                <p>Your Premier Celebrity Management Platform!</p>
+                <a href="{{url_for('bookingpage')}}" class="btn btn-danger btn-lg mt-3">Get Started</a>
+            </div>
+
+            <div class="about-info mt-auto position-relative" id="about"> 
+                <div class="container position-relative">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h2>About Master Management</h2>
+                            <p>Here, you can effortlessly verify the authenticity of a person's Art, Act, or Action. Our mission is to ensure transparency, trust, and credibility, connecting you with the genuine essence of talent and creativity.</p>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+           
+        </section>          
+            
+            <!-- Celebs Section -->
+      <section id="celebs" class="celebs section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Meet Our Celebrities</h2>
+          <p>Book a Session with some of our top Celebrities</p>
+        </div><!-- End Section Title -->
+  
+        <div class="container">
+  
+          <div class="row gy-4">
+  
+            <div class="col-lg-12 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="card h-100">
+                <div class="card-img">
+                  <img src="{{ url_for('static', filename='images/aquaman.jpg') }}" alt="" class="img-fluid">
+                </div>
+                <h3><a href="#" class="stretched-link">Joseph Jason Momoa</a></h3>
+                <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <p>Born: 1 August 1979 (age 45 years), Honolulu, Hawaii, United States
+                    Spouse: Lisa Bonet (m. 2017–2024)
+                    Height: 1.93 m
+                    Upcoming movies: A Minecraft Movie, Fast X: Part 2, Animal Friends
+                    Children: Lola Iolani Momoa, Nakoa-Wolf Manakauapo Namakaeha Momoa
+                    Parents: Coni Momoa, Joseph Momoa
+                    
+                    
+                    Joseph Jason Namakaeha Momoa is an American actor.
+                    He made his acting debut as Jason loane on the syndicated action drama series Baywatch: Hawaii, which was followed by portrayals of Ronon Dex on the  Syfy science fiction series Stargate Atlantis (2005–2009), and Khal Drogo in the first two seasons of the HBO fantasy drama series Game of Thrones (2011–2012). He went on to play the lead roles in the Discovery Channel historical drama series Frontier (2016–2018) and the Apple TV+ science fiction series See (2019–2022).</p>
+              </div>
+            </div><!-- End Card Item -->
+            <hr class="divider">
+
+  
+            <div class="col-lg-12 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="card h-100">
+                <div class="card-img">
+                  <img src="{{ url_for('static', filename='images/emaa.webp') }}" alt="" class="img-fluid">
+                </div>
+                <h3><a href="#" class="stretched-link"> Emma Charlotte Watson</a></h3>
+                <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <p>Emma Charlotte Duerre Watson (born 15 April 1990) is an English actress. Known for her roles in both blockbusters and independent films, she has received a selection of accolades, including a Young Artist Award and three MTV Movie Awards. Watson has been ranked among the world's highest-paid actresses by Forbes and Vanity Fair, and was named one of the 100 most influential people in the world by Time magazine in 2015.[1][2][3] Watson was also listed by Forbes as an honouree on the Forbes 30 under 30 list in 2015 and 2016.[4]
+
+                    Watson attended the Dragon School and trained in acting at the Oxford branch of Stagecoach Theatre Arts. As a child, she rose to stardom after landing her first professional acting role as Hermione Granger in the Harry Potter film series, having previously acted only in school plays. Watson made her first major forays beyond the Potter franchise starring in Ballet Shoes (2007), and lent her voice to The Tale of Despereaux (2008). After the final Harry Potter film, she took on a supporting role in My Week with Marilyn (2011), before starring as Sam, a flirtatious, free-spirited student in The Perks of Being a Wallflower (2012), to critical success. </p>
+              </div>
+            </div><!-- End Card Item -->
+            <hr class="divider">
+
+            <div class="col-lg-12 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="card h-100">
+                <div class="card-img">
+                  
+                  <img src="{{ url_for('static', filename='images/liiaam.jpeg') }}" alt="" class="img-fluid">
+                </div>
+                <h3><a href="#" class="stretched-link">Liam Hemswort</a></h3>
+                <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <p>Liam Hemsworth (born 13 January 1990[1]) is an Australian actor. He played the roles of Josh Taylor in the soap opera Neighbours and Marcus in the children's television series The Elephant Princess. In American films, Hemsworth starred as Will Blakelee in The Last Song (2010), as Gale Hawthorne in The Hunger Games film series (2012–2015), and as Jake Morrison in Independence Day: Resurgence (2016).
+
+                    Hemsworth was born in Melbourne, Australia, to Leonie (née van Os), an English teacher, and 
+                    Craig Hemsworth, a social-services counsellor.[2][3][4] He has two older brothers, 
+                    Chris Hemsworth and Luke Hemsworth, who are also actors.[5] His maternal grandfather is a Dutch immigrant, 
+                    and his other ancestry is Irish, English, German, and Scottish.[6] Hemsworth has said that though there is competition for jobs among them, it is friendly: "We are brothers and we are always competitive, but it is a good thing, it pushes us and we are always happy whenever someone books something
+                </p>
+              </div>
+            </div><!-- End Card Item -->
+            <hr class="divider">
+
+          </div>
+  
+        </div>
+  
+      </section>
+              <!-- Tickets Highlights -->
+              <section id="menu" class="hotels section" style="padding-top: 0; padding-bottom: 0;">
+                <div class="container section-title">
+                    <h2>TICKETS</h2>
+                    <p>Book your Tickets Online Now.</p>
+                </div>
+    
+              <div class="container">
+                <div class="row gy-4">
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 ticket-card">
+                            <div class="card-img">
+                                <img src="{{ url_for('static', filename='images/standard.png') }}" alt="Standard Tickets" class="img-fluid">
+                            </div>
+                            <h3><a href="{{url_for('bookingpage')}}" class="stretched-link">Standard</a></h3>
+                            <p>Affordable access to all the action and excitement at unbeatable value</p>
+                            <a href="{{url_for('bookingpage')}}" class="btn book-btn">Book Now</a>
+                        </div>
+                    </div>
+                    
+    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 ticket-card">
+                            <div class="card-img">
+                              
+                                <img src="{{ url_for('static', filename='images/premium.png') }}" alt="Premium Tickets" class="img-fluid">
+                            </div>
+                            <h3><a href="{{url_for('bookingpage')}}" class="stretched-link">Premium</a></h3>
+                            <p>Get prime seating and exclusive perks for a memorable and elevated experience</p>
+                            <a href="{{url_for('bookingpage')}}" class="btn book-btn">Book Now</a>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 ticket-card">
+                            <div class="card-img">
+                                <img src="{{ url_for('static', filename='images/platinum.png') }}" alt="Platinum Tickets" class="img-fluid">
+                            </div>
+                            <h3><a href="{{url_for('bookingpage')}}" class="stretched-link">Platinum</a></h3>
+                            <p>Enjoy VIP access, priority seating, and the finest perks for an unforgettable experience</p>
+                            <a href="{{url_for('bookingpage')}}" class="btn book-btn">Book Now</a>
+                        </div>
+                    </div>
+    
+                </div>
+              </div>
+            </section>
+      
+      
+      <!-- Charity Section -->
+
+      <section id="mission" class="celebss section">
+        <div class="container section-title" data-aos="fade-up">
+            <h2>We Have A Mission</h2>
+            <p>We believe in making a positive impact. Join us in supporting these wonderful causes:</p>
+        </div><!-- End Section Title -->
+
+
+      <div class="charity-section">
+        <div class="charity-grid">
+            <!-- Cause 1 -->
+            <div class="charity-card">
+                <img src="{{ url_for('static', filename='images/edu.jpg') }}" class="img-fluid" alt="Cause Name">
+                <h3>Education for All</h3>
+                <p>Supporting access to quality education for underprivileged children worldwide.</p>
+                <a href="{{url_for('bookingpage')}}" class="btn secondary-btn">Book Participation</a>
+            </div>
+    
+            <!-- Cause 2 -->
+            <div class="charity-card">
+                <img src="{{ url_for('static', filename='images/conserve.jpg') }}" class="img-fluid" alt="Cause Name">
+                <h3>Environmental Conservation</h3>
+                <p>Join us in protecting our planet through reforestation and clean energy projects.</p>
+                <a href="{{url_for('bookingpage')}}" class="btn secondary-btn">Book Participation</a>
+            </div>
+    
+            <!-- Cause 3 -->
+            <div class="charity-card">
+                <img src="{{ url_for('static', filename='images/healthcare.jpg') }}" class="img-fluid" alt="Cause Name">
+                <h3>Healthcare for All</h3>
+                <p>Providing medical care and essential supplies to underserved communities.</p>
+                <a href="{{url_for('bookingpage')}}" class="btn secondary-btn">Book Participation</a>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+
+        <!-- K-Stars Section -->
+<section id="kstars" class="kstars section-bg" style="padding-top: 0; padding-bottom: 0;">
+    <div class="container">
+        <div class="section-title">
+            <h2>K-Stars</h2>
+            <p>Explore a range of Our Korean Stars Inside.</p>
+        </div>
+        <hr class="divider">
+
+        <div class="kstar-row" >
+            <!-- Row 1 -->
+            <div class="kstar-item" style="padding-top: 0;">
+                <div class="kstar-image"> 
+                    <img src="{{ url_for('static', filename='images/leemin.jpg') }}" alt="Lee Min Ho">
+                </div>
+                <div class="kstar-description">
+                    <h4 class="title"><a href="{{ url_for('static', filename='images/leemin.jpg') }}">Lee Min Ho</a></h4>
+                    <p class="description">"One who wears the crown, bears the crown"</p>
+                </div>
+            </div>
+            <hr class="divider">
+
+            <!-- Row 2 -->
+            <div class="kstar-item">
+                <div class="kstar-image">
+                    <img src="{{ url_for('static', filename='images/yuna.jpg') }}" alt="Yuna">
+                </div>
+                <div class="kstar-description">
+                    <h4 class="title"><a href="{{ url_for('static', filename='images/yuna.jpg') }}">Yuna Kim</a></h4>
+                    <p class="description">"I really hope that when i leave, my last race will  be beautiful"</p>
+                </div>
+            </div>
+            <hr class="divider">
+
+            <!-- Row 3 -->
+            <div class="kstar-item">
+                <div class="kstar-image">
+                    <img src="{{ url_for('static', filename='images/susy.jpg') }}" alt="Bae Susy">
+                </div>
+                <div class="kstar-description">
+                    <h4 class="title"><a href="{{ url_for('static', filename='images/susy.jpg') }}">Bae Susy</a></h4>
+                    <p class="description">"If you want the rainbow, You've got to put up with the rain"</p>
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="kstar-item">
+                <div class="kstar-image">
+                    <img src="{{ url_for('static', filename='images/suk.webp') }}" alt="suk">
+                </div>
+                <div class="kstar-description">
+                    <h4 class="title"><a href="{{ url_for('static', filename='images/suk.webp') }}">Lee Jong Suk</a></h4>
+                    <p class="description">Everyone has a unique heartbeat, Just as everyone has a different face.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+   <!-- red carpet Section -->
+   <section id="venue" class="venue section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Red Carpet Moments<br></h2>
+      <p>Export a gallery of our shared Red Carpet moments with top stars</p>
+    </div><!-- End Section Title -->
+
+    <div class="container-fluid" data-aos="fade-up">
+
+      <div class="row g-0">
+        <div class="col-lg-6 venue-map">
+          <img  class="img-fluid" src="{{ url_for('static', filename='images/red1.jpg') }}" alt="">
+          </div>
+
+        <div class="col-lg-6 venue-info">
+          <div class="row justify-content-center">
+            <div class="col-11 col-lg-8 position-relative">
+              <h3>You Can Share Your Red Carpet Moments with us.</h3>
+              <p>You can <span> <a href="">Subscribe to Our Newsletter</a> To enquire and get updates to catch up with your favourite stars</span>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container-fluid venue-gallery-container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row g-0">
+
+        <div class="col-lg-3 col-md-4">
+          <div class="venue-gallery">
+            <a href="{{ url_for('static', filename='images/red3.jpg') }}" class="glightbox" data-gall="venue-gallery">
+              <img src="{{ url_for('static', filename='images/red3.jpg') }}" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="venue-gallery">
+            <a href="{{ url_for('static', filename='images/red5.jpg') }}" class="glightbox" data-gall="venue-gallery">
+              <img src="{{ url_for('static', filename='images/red5.jpg') }}" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="venue-gallery">
+            <a href="{{ url_for('static', filename='images/red6.jpg') }}" class="glightbox" data-gall="venue-gallery">
+              <img src="{{ url_for('static', filename='images/red6.jpg') }}" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="venue-gallery">
+            <a href="{{ url_for('static', filename='images/red7.jpg') }}" class="glightbox" data-gall="venue-gallery">
+              <img src="{{ url_for('static', filename='images/red7.jpg') }}" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="{{ url_for('static', filename='images/red2.jpg') }}" class="glightbox" data-gall="venue-gallery">
+                <img src="{{ url_for('static', filename='images/red2.jpg') }}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="{{ url_for('static', filename='images/red4.jpg') }}" class="glightbox" data-gall="venue-gallery">
+                <img src="{{ url_for('static', filename='images/red4.jpg') }}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+                <!-- newsletter Section -->
+                <section id="" class="contact section"> 
+
+                    <!-- Section Title -->
+                    <div class="container section-title" id="newsletter">
+                      <h2>Contact Us</h2>
+                      <p>Contact Us or Sign up to our News Letter</p>
+                    </div>
+              
+                    <div class="container">
+                        <div class="row gy-4">
+                            
+                          <div class="col-lg-6">
+                                <div class="info-item d-flex flex-column justify-content-center align-items-center">
+                                    <i class="bi bi-geo-alt"></i>
+                                        <h3>Address</h3>
+                                        <p>151 42nd St, New York, United States</p>
+                            </div>
+                        </div><!-- End Info Item -->
+              
+                        <div class="col-lg-3 col-md-6">
+                          <div class="info-item d-flex flex-column justify-content-center align-items-center">
+                            <i class="bi bi-telephone"></i>
+                            <h3>Call Us</h3>
+                            <p>+223 903 244 6523</p>
+                          </div>
+                        </div><!-- End Info Item -->
+              
+                        <div class="col-lg-3 col-md-6">
+                          <div class="info-item d-flex flex-column justify-content-center align-items-center">
+                            <i class="bi bi-envelope"></i>
+                            <h3>Email Us</h3>
+                            <p>Mastermanagementceleb@gmail.com</p>
+                          </div>
+                        </div><!-- End Info Item -->
+                      </div>
+                     </div> 
+            
+                        <section class="newsletters" id="newsletter">
+                            <div class="newsletters-card">
+                              <h2>WELCOME TO OUR NEWSLETTER!</h2>
+                              <p>Subscribe  for the latest updates and offers.</p>
+                              <form class="newsletters-form" action="/subscribe" method="POST">
+                                <input type="email" id="email" name="email" required>
+                                <button type="submit" class="submit-btn">Subscribe</button>
+                              </form>
+                            </div>
+
+                          </section>
+                          
+                    </section>
+
+                     <!-- Faq Section -->
+    <section id="faq" class="faq section">
+
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Frequently Asked Questions</h2>
+          <p>Find answers to some of the common questions about MasterMgt</p>
+        </div><!-- End Section Title -->
+  
+        <div class="container" >
+  
+          <div class="row justify-content-center">
+  
+            <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+              <div class="faq-container">
+  
+                <div class="faq-item faq-active">
+                  <h3> How can I book tickets for events or shows?</h3>
+                  <div class="faq-content">
+                    <p>You can easily book tickets through our ticket section. Select your preferred ticket type (Standard, Premium, or Platinum), click <span><a href="{{url_for('bookingpage')}}">Book Now</a></span> and follow the steps to complete your purchase.</p> 
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
+  
+                <div class="faq-item">
+                  <h3>Can I meet my favorite celebrities in person?</h3>
+                  <div class="faq-content">
+                    <p> Yes, we offer exclusive opportunities to meet our celebrities through special events or meet-and-greet packages. Subscribe to our <span><a href="#newsletter">News Letter</a></span> section for details.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
+  
+                <div class="faq-item">
+                  <h3>How do I join your charity movement?</h3>
+                  <div class="faq-content">
+                    <p>Join us in making a difference! Visit our charity section to learn about ongoing initiatives for health, education, and environmental sustainability. You can <span><a href="{{url_for('bookingpage')}}">Book your participation here.</a></span></p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+  
+                <div class="faq-item">
+                  <h3>How do I subscribe to your newsletter?</h3>
+                  <div class="faq-content">
+                    <p>Subscribing is simple! Go to our newsletter section or click <span><a href="#newsletter">Here</a></span>, enter your email address in the provided field, and click "Subscribe." Stay updated with our latest events, news, and offers.</p>
+                  </div> 
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+  
+                <div class="faq-item">
+                  <h3>Do you manage celebrities from all over the world?</h3>
+                  <div class="faq-content">
+                    <p>Yes, we manage a diverse portfolio of celebrities, including international stars, regional icons, and up-and-coming talents.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+  
+                <div class="faq-item">
+                  <h3>Are there any perks for Platinum ticket holders?</h3>
+                  <div class="faq-content">
+                    <p>Absolutely! Platinum ticket holders enjoy VIP access, priority seating, and exclusive meet-and-greet opportunities with celebrities.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+  
+      </section><!-- /Faq Section -->
+  
+
+    </main>
+
+    <footer id="footer" class="footer">
+
+        <div class="footer-top">
+          <div class="container">
+            <div class="row gy-4">
+              <div class="col-lg-4 col-md-6 footer-about">
+                <a href="{{url_for('home')}}" class="logo d-flex align-items-center">
+                  <span class="sitename" style="color: #e01111;;">Master MGT</span>
+                </a>
+                
+                <div class="privacy-policy">
+                    <div class="policy-header">
+                      <span>Privacy Policy</span>
+                      <i class="toggle-arrow bi bi-chevron-down"></i>
+                    </div>
+                    <p class="policy-content">
+                        We keep our stars private life private as they Keep a respectful and professional barrier between our clients and the general public. We offer the best in entertainment, and entertaining the general public is our top priory, as to bring change in the sad world and turning that into happiness. We are always ready to respond to your request. The management team will respond to stipulated request anytime.                    
+                    </p>
+                  </div>
+                  <div class="privacy-policy">
+                    <div class="policy-header">
+                      <span>Terms and Conditions</span>
+                      <i class="toggle-arrow bi bi-chevron-down"></i>
+                    </div>
+                    <p class="policy-content">
+                        By engaging with our services, you agree to comply with the guidelines and policies set forth by our management team. Any breach, including misuse of proprietary information or violations of confidentiality agreements, may result in legal consequences. We reserve the right to modify these terms without prior notice. For detailed inquiries, please contact our legal team.
+                    </p>
+                  </div>
+                  <div class="privacy-policy">
+                    <div class="policy-header">
+                      <span>Community Guidelines</span>
+                      <i class="toggle-arrow bi bi-chevron-down"></i>
+                    </div>
+                    <p class="policy-content">
+                        We encourage a respectful and supportive community environment. Harassment, hate speech, or any form of disrespectful behavior will not be tolerated. Our community guidelines aim to ensure that interactions remain professional and constructive, maintaining the dignity of our clients and staff. Please adhere to these rules to promote harmony and mutual respect.
+                    </p>
+                  </div>
+                  
+              </div>
+
+              <div class="col-lg-2 col-md-3 footer-links">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><a href="#menu">Tickets</a></li>
+                  <li><a href="#celebs">Our Celebs</a></li>
+                  <li><a href="#mission">Our Mission</a></li>
+                  <li><a href="#kstars">K-Stars</a></li>
+                  <li><a href="#venue">Red Carpet</a></li>
+                  <li><a href="#faq">FAQ</a></li>
+                  <li><a href="#newsletter">NewsLetter</a></li>
+                </ul>
+              </div>
+
+
+              <div class="footer-sponsors">
+                <h3>Our Sponsors</h3>
+                <div class="sponsor-logos">
+                  <img src="{{ url_for('static', filename='images/sponsor1.png') }}" alt="Sponsor 1" class="sponsor-logo">
+                  <img src="{{ url_for('static', filename='images/sponsor2.png') }}" alt="Sponsor 2" class="sponsor-logo">
+                  <img src="{{ url_for('static', filename='images/sponsor3.png') }}" alt="Sponsor 3" class="sponsor-logo">
+                  <img src="{{ url_for('static', filename='images/sponsor4.png') }}" alt="Sponsor 4" class="sponsor-logo">
+                  <img src="{{ url_for('static', filename='images/sponsor5.png') }}" alt="Sponsor 5" class="sponsor-logo">                  
+                </div>
+              </div>
+                
+            </div>
+        </div>
+      </div>
+
+      <div class="copyright text-center">
+        <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+  
+          <div class="d-flex flex-column align-items-center align-items-lg-start">
+            <div>
+              © Copyright <strong><span>MasterMgt</span></strong>. All Rights Reserved
+            </div>
+        
+        
+          </div>
+  
+          <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+            <a href="https://x.com/"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+            <a href="https://linkedin.com/in/"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>    
+    </footer>
+
+      <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+
+      <!-- privacy-policy -->
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          // Select all privacy-policy elements
+          const privacySections = document.querySelectorAll(".privacy-policy");
+      
+          // Attach event listeners to each
+          privacySections.forEach(section => {
+            const header = section.querySelector(".policy-header");
+            
+            header.addEventListener("click", () => {
+              section.classList.toggle("active");
+            });
+          });
+        });
+      </script>
+      
+      
+<!-- Vendor JS Files -->
+<script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/php-email-form/validate.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/aos/aos.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/glightbox/js/glightbox.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.js') }}"></script>
+
+<!-- Main JS File -->
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>
+
