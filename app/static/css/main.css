@@ -1835,7 +1835,7 @@ color: #2e1313;
 /* newsletter */
 
 /* Newsletter Section */
-.newsletter {
+.newsletters {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1843,7 +1843,7 @@ color: #2e1313;
   background-color: #f9f9f9;
 }
 
-.newsletter-card {
+.newsletters-card {
   background: #ffffff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -1853,19 +1853,19 @@ color: #2e1313;
   width: 100%;
 }
 
-.newsletter-card h2 {
+.newsletters-card h2 {
   font-size: 1.8rem;
   color: #333;
   margin-bottom: 10px;
 }
 
-.newsletter-card p {
+.newsletters-card p {
   font-size: 1rem;
   color: #555;
   margin-bottom: 20px;
 }
 
-.newsletter-form {
+.newsletters-form {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -1900,11 +1900,11 @@ color: #2e1313;
     padding: 20px 15px;
   }
 
-  .newsletter-card h2 {
+  .newsletters-card h2 {
     font-size: 1.5rem;
   }
 
-  .newsletter-card p {
+  .newsletters-card p {
     font-size: 0.9rem;
   }
 
